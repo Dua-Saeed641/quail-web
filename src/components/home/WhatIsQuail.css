@@ -1,0 +1,55 @@
+.what-is-quail {
+  width: min(100% - 3rem, var(--container-width));
+  margin: 0 auto;
+  padding: var(--spacing-xl) 0;
+}
+
+.what-is-quail__content {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 4rem;
+
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--border);
+}
+
+.what-is-quail__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.what-is-quail__body {
+  max-width: 750px;
+}
+
+.what-is-quail__body h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.what-is-quail__body p {
+  max-width: 650px;
+  margin-top: var(--spacing-lg);
+
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .what-is-quail {
+    width: min(100% - 2rem, var(--container-width));
+  }
+
+  .what-is-quail__content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
