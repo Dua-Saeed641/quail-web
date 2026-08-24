@@ -1,8 +1,6 @@
 function WhatIsQuail() {
   return (
-    <section>
-      <h1>What Is Quail</h1>
-    </section>
+    <section id="what-is-quail"></section>
   );
 }
 
